@@ -1,0 +1,27 @@
+@import "../../styles/base/variables";
+@import "../../styles/base/mixins";
+
+.breadcrumb {
+  grid-column: 2 / span 10;
+  display: flex;
+  align-items: center;
+  font-size: rem(14px);
+  color: $medium-dark-gray;
+  margin: rem(16px) 0;
+
+  .breadcrumbItem {
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumbLabel {
+    font-weight: 400;
+    color: $medium-dark-gray;
+  }
+  .lastBreadcrumb .breadcrumbLabel {
+    font-weight: bold;
+  }
+  .separator {
+    margin: 0 rem(4px);
+  }
+}

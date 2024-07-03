@@ -1,0 +1,10 @@
+@import "../../styles/base/mixins";
+
+.productList {
+  list-style: none;
+  grid-column: 2 / span 10;
+  background-color: white;
+  padding: rem(16px);
+  margin: 0;
+  @include border-radius(rem(4px));
+}

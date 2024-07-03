@@ -1,0 +1,73 @@
+@import "../../styles/base/variables";
+@import "../../styles/base/mixins";
+
+@import "../../components/common/Button.module.scss";
+
+.productContainer {
+  background-color: white;
+  grid-column: 2 / span 10;
+  padding: rem(16px);
+  margin-top: rem(32px);
+  @include border-radius(rem(4px));
+  @media (min-width: 744px) {
+    padding: rem(32px);
+  }
+}
+.productImage {
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @media (min-width: 744px) {
+    max-width: rem(680px);
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+  @media (min-width: 744px) {
+    grid-column: span 7;
+  }
+}
+.productInfo {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .productCondition {
+    color: $medium-dark-gray;
+    font-size: rem(14px);
+  }
+  .productTitle {
+    @include heading1;
+    margin: rem(16px) 0 rem(32px);
+  }
+  .productPrice {
+    font-size: rem(46px);
+    color: $dark-gray;
+    margin-bottom: rem(32px);
+  }
+  @media (min-width: 744px) {
+    grid-column: 9 / span 5;
+  }
+}
+.descriptionWrapper {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  gap: rem(32px);
+  margin-top: rem(64px);
+  h2 {
+    margin: 0;
+    @include heading3;
+  }
+  .productDescription {
+    text-align: left;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+  @media (min-width: 1024px) {
+    grid-column: span 7;
+  }
+}

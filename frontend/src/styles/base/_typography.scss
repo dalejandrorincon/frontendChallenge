@@ -1,0 +1,13 @@
+@import "variables";
+body {
+  font-family: $font-family-base;
+  font-size: $base-font-size;
+  color: $font-color;
+}
+
+p {
+  line-height: 1.35;
+  margin: 0;
+  font-weight: 400;
+  color: $medium-gray;
+}

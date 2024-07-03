@@ -1,0 +1,12 @@
+@import "../../styles/base/variables";
+@import "../../styles/base/mixins";
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: rem(20px);
+  max-width: rem(1184px);
+  margin: 0 auto;
+
+  @include border-radius(rem(4px));
+}
